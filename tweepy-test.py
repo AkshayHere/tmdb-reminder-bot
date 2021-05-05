@@ -36,7 +36,7 @@ def createQuoteTweet():
 	# this line should tweet out the message to your account's
 	# timeline. The "Read and Write" setting is on https://dev.twitter.com/apps
 	api.update_status(status=quote)
-	input('Press any key to exit...')
+	#input('Press any key to exit...')
 
-sched.add_job(createQuoteTweet, "interval", minutes=3)
+sched.add_job(createQuoteTweet, "interval", minutes=60)
 sched.start()
