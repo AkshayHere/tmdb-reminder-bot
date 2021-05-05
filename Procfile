@@ -1,1 +1,1 @@
-python3 tweepy-test.py
+clock: python tweepy-test.py
