@@ -10,9 +10,11 @@ def getRandomQuote():
 	if resp.status_code != 200:
 	# Throws an exception out
 	    raise requests.RequestException('GET /random/ {}'.format(resp.status_code))
-#	print(resp.json())
+	# print(resp.json())
 
 	response = resp.json()
 	author = response['author']
 	quote = response['quote']
-	return quote+'\n-- '+author
+	# ternary operator
+	output = quote+'\n-- '+author if (author != '') else quote
+	return output

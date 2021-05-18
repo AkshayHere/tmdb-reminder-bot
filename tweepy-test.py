@@ -38,5 +38,5 @@ def createQuoteTweet():
 	api.update_status(status=quote)
 	#input('Press any key to exit...')
 
-sched.add_job(createQuoteTweet, "interval", minutes=60)
+sched.add_job(createQuoteTweet, "interval", minutes=240)
 sched.start()
