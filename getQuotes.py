@@ -7,6 +7,8 @@ def getRandomQuote():
     # Random Quote Generator
     # https://github.com/lukePeavey/quotable
     resp = requests.get('http://api.quotable.io/random')
+    print(resp)
+    print(resp.status_code)
     if resp.status_code != 200:
         # Throws an exception out
         raise requests.RequestException(
@@ -15,7 +17,7 @@ def getRandomQuote():
 
     response = resp.json()
     author = response['author']
-    quote = response['quote']
+    quote = response['content']
     # ternary operator
     output = quote+'\n-- '+author if (author != '') else quote
     print('output : '+output)
