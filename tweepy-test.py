@@ -26,8 +26,8 @@ CLIENT_SECRET = os.getenv("CLIENT_SECRET")
 
 def createQuoteTweet():
     print("Entering createQuoteTweet...")
-    auth = tweepy.OAuth1UserHandler(consumer_key,
-                        consumer_secret, access_token, access_token_secret)
+    # auth = tweepy.OAuth1UserHandler(consumer_key,
+    #                     consumer_secret, access_token, access_token_secret)
     # auth.set_access_token(access_token, access_token_secret)
     print("Defined tokens...")
 
