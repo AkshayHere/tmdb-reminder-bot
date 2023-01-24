@@ -5,7 +5,7 @@ import requests
 from datetime import datetime
 
 def getMoviesReleasingToday():
-    API_KEY="e2d839f38159f4c867f24fe905f323af"
+    API_KEY=""
     POSTER_PATH="https://image.tmdb.org/t/p/w500/"
     formatted_date = datetime.now().strftime("%Y-%m-%d")
     future_date = formatted_date + datetime.timedelta(days=1)
