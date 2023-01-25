@@ -24,8 +24,8 @@ jobs:
           
       - name: execute py script # run main.py
         env:
-          tmdb_api_key: ${{ secrets.tmdb_api_key }}
-          bearer_token: ${{ secrets.bearer_token }}
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
           consumer_key: ${{ secrets.consumer_key }}
           consumer_secret: ${{ secrets.consumer_secret }}
           access_token: ${{ secrets.access_token }}
