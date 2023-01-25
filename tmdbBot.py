@@ -31,7 +31,7 @@ def getMoviesReleasingToday():
     # print(f'formatted_date: {formatted_date}')
     resp = requests.get(
         f'{TMDB_API_URL}discover/movie?api_key={TMDB_API_KEY}&language=en-US&air_date.gte=&region=US&release_date.gte={formatted_date}&release_date.lte={formatted_date}&show_me=0&sort_by=primary_release_date.desc&vote_average.gte=0&vote_average.lte=10&vote_count.gte=0&with_original_language=en&with_release_type=3&with_runtime.gte=0&with_runtime.lte=400')
-    # print(resp)
+    print(resp)
     if resp.status_code != 200:
         # Throws an exception out
         status_code, status_message = resp.json()
