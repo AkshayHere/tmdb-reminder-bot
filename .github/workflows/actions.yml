@@ -1,9 +1,9 @@
 name: Generate Movie Release Daily
 
 on:
-  schedule:
-    - cron: '0 */3 * * *' # Runs every 3 hours
-  # workflow_dispatch:
+  # schedule:
+  #   - cron: '0 */3 * * *' # Runs every 3 hours
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
