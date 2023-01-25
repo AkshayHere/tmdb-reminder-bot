@@ -29,6 +29,7 @@ jobs:
           consumer_secret: ${{ secrets.consumer_secret }}
           access_token: ${{ secrets.access_token }}
           access_token_secret: ${{ secrets.access_token_secret }}
+          TESTER: ${{ env.TESTER }}
         run: python tweepy-test.py
           
       # - name: commit files
