@@ -1,17 +1,14 @@
 name: Generate Movie Release Daily
 
 on:
-  # schedule:
-  #   - cron: '0 */3 * * *' # Runs every 3 hours
+  schedule:
+    - cron: '20 11 * * *' # Runs every 3 hours
   workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
     environment: twitter-quotes-bot
     steps:
-      - name: checkout repo content
-        uses: actions/checkout@v3 # checkout the repository content to github runner
-
       - name: setup python
         uses: actions/setup-python@v4
         with:
@@ -31,16 +28,3 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
         run: python tweepy-test.py
-          
-      # - name: commit files
-      #   run: |
-      #     git config --local user.email "action@github.com"
-      #     git config --local user.name "GitHub Action"
-      #     git add -A
-      #     git diff-index --quiet HEAD || (git commit -a -m "Updated data" --allow-empty)
-          
-      # - name: push changes
-      #   uses: ad-m/github-push-action@v0.6.0
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     branch: main 
