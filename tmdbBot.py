@@ -9,7 +9,7 @@ TMDB_API_URL = "https://api.themoviedb.org/3/"
 POSTER_PATH = "https://image.tmdb.org/t/p/w500"
 TMDB_URL = "https://www.themoviedb.org/movie/"
 IMDB_URL = "https://m.imdb.com/title/"
-ADD_DAYS = 2 # No of days added to current day to pull data
+ADD_DAYS = 1 # No of days added to current day to pull data
 
 def convertTextToBold(input_text):
     chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
