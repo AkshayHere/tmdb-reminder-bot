@@ -6,8 +6,8 @@ import os
 load_dotenv()
 
 # Set the various access codes
-consumer_key = os.getenv("API_KEY")
-consumer_secret = os.getenv("API_SECRET")
+consumer_key = os.getenv("CONSUMER_KEY")
+consumer_secret = os.getenv("CONSUMER_SECRET")
 access_token = os.getenv("ACCESS_TOKEN")
 access_token_secret = os.getenv("ACCESS_TOKEN_SECRET")
 bearer_token = os.getenv("BEARER_TOKEN")

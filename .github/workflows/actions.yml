@@ -26,10 +26,10 @@ jobs:
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
           BEARER_TOKEN: ${{ secrets.BEARER_TOKEN }}
-          consumer_key: ${{ secrets.consumer_key }}
-          consumer_secret: ${{ secrets.consumer_secret }}
-          access_token: ${{ secrets.access_token }}
-          access_token_secret: ${{ secrets.access_token_secret }}
+          CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }}
+          CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
         run: python tweepy-test.py
           
       # - name: commit files
