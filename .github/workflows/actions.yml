@@ -2,7 +2,7 @@ name: Generate Movie Release Daily
 
 on:
   schedule:
-    - cron: '45 13 * * *' # Runs everyday @ 10:15 am
+    - cron: '45 01 * * *' # Runs everyday @ 10:15 am
   workflow_dispatch:
 jobs:
   build:
