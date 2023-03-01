@@ -3,6 +3,8 @@
 # https://2.python-requests.org/en/latest/api/
 import requests
 
+# DEPRECATED
+# Currently this is not used. Leaving for references
 def getRandomQuote():
     # Random Quote Generator
     # https://github.com/lukePeavey/quotable

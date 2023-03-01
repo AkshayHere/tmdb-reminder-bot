@@ -1,5 +1,8 @@
-# twitter-quote-bot
-Random Quote Generating Twitter Bot
+## TMDB Release Reminder Bot
 
-A python based twitter bot using [tweepy](https://github.com/tweepy/tweepy).
-Generates a random quote from a [freequote server](https://freequote.herokuapp.com).
+Created a Twitter Bot that creates tweets based on the movies that are releasing tomorrow.
+The movie list is retrieved from TMDB database and currently using US as the base country.
+
+### References
+- Tweets are generated using the python library [tweepy](https://github.com/tweepy/tweepy).
+- The job is automated using Github Workflows
